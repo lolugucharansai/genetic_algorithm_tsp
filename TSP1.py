@@ -88,7 +88,7 @@ def genetic_algorithm(graph, population_size, elite_size, mutation_rate, generat
     return best_tour, best_distance
 
 # Test the function
-graph = [[0, 10, 15, 20], [10, 0, 35, 25], [15, 35, 0, 30], [20, 25, 30, 0]]
+graph = [[0, 10, 15, 20], [10, 0, 35, 25], [15, 35, 0, 30], [20, 25, 30, 0]]#A complete Graph (if incomplte graph modify the mutation funtion accordingly).
 best_tour, best_distance = genetic_algorithm(graph, population_size=100, elite_size=20, mutation_rate=0.01, generations=50)
 print(f"Best tour: {best_tour}")
 print(f"Best distance: {best_distance}")
